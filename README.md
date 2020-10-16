@@ -1,4 +1,4 @@
-# LEARN_OPENCV_with_Python
+# SELF_LEARNING_OPENCV_with_Python
 
 OpenCV Image Processing - Self Learning codes
 
