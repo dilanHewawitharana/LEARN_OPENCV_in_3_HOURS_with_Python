@@ -63,14 +63,15 @@ def show_images():
 cv2.namedWindow('TrackBars')
 cv2.resizeWindow('TrackBars', 640, 310)
 cv2.createTrackbar('Hue Min', 'TrackBars', 0, 179, val_changed)
-cv2.createTrackbar('Hue Max', 'TrackBars', 179, 179, val_changed)
 cv2.createTrackbar('Sat Min', 'TrackBars', 0, 255, val_changed)
-cv2.createTrackbar('Sat Max', 'TrackBars', 255, 255, val_changed)
 cv2.createTrackbar('Val Min', 'TrackBars', 0, 255, val_changed)
+
+cv2.createTrackbar('Hue Max', 'TrackBars', 179, 179, val_changed)
+cv2.createTrackbar('Sat Max', 'TrackBars', 255, 255, val_changed)
 cv2.createTrackbar('Val Max', 'TrackBars', 255, 255, val_changed)
 
 # Camera read
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 cap.set(3, 640)
 cap.set(4, 480)
 cap.set(10, 100)  # Set Brightness
